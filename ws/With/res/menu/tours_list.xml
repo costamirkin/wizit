@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/seeOnMap"
+        android:title="SEE ON MAP">
+    </item>
+    <item
+        android:id="@+id/tourDetails"
+        android:title="TOUR DETAILS">
+    </item>
+    <item
+        android:id="@+id/register"
+        android:title="REGISTER">
+    </item>
+    <item
+        android:id="@+id/tourRate"
+        android:title="RATE">
+    </item>
+
+    
+</menu>

@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ChatWindow" >
+
+    <ScrollView
+        android:id="@+id/svAdd"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/btnAdd"
+        android:layout_alignParentTop="true"
+        android:background="#1FFFCC"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/lladd"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+    <ListView 
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/btnAdd"
+        android:layout_alignParentTop="true"
+        android:background="#1FFFCC"
+        android:id="@+id/lvChat" >
+        
+    </ListView>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Send" />
+
+    <EditText
+        android:id="@+id/et_txtMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/svAdd"
+        android:layout_toLeftOf="@+id/btnAdd"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

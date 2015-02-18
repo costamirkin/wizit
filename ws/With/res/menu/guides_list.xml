@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/guideDetails"
+        android:title="GUIDE DETAILS">
+    </item>
+    <item
+        android:id="@+id/guideTours"
+        android:title="GUIDE TOURS">
+    </item>
+    <item
+        android:id="@+id/guideRate"
+        android:title="RATE">
+    </item>
+
+    
+</menu>

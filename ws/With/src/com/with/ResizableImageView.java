@@ -1,0 +1,30 @@
+package com.with;
+
+import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.util.AttributeSet;
+import android.view.View.MeasureSpec;
+import android.widget.ImageView;
+
+public class ResizableImageView extends ImageView {
+
+    public ResizableImageView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+    }
+
+    @Override 
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec){
+         Drawable drawable = getDrawable();
+
+         if(drawable!=null){
+                 // ceil not round - avoid thin vertical gaps along the left/right edges
+                 int width = MeasureSpec.getSize(widthMeasureSpec);
+                 int height = (int) Math.ceil((float) width * (float) drawable.getIntrinsicHeight() / 
+                		 (float) drawable.getIntrinsicWidth());
+                 setMeasuredDimension(width, height);
+         }else{
+                 super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+         }
+    }
+
+}

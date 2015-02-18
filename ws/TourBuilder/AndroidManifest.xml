@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.with.tourbuilder"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.with.tourbuilder.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.with.tourbuilder.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="com.with.tourbuilder.ParseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/build"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service android:name="com.parse.PushService" >
+        </service>
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.with.signup.SignUp"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.with.signup.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.with.tours.ToursActivity" >
+        </activity>
+        <activity
+            android:name="com.with.tourbuilder.StartActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.with.tourbuilder.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.with.tourbuild.TourDetailsActivity" >
+        </activity>
+        <activity android:name="com.with.tours.ToursList" >
+        </activity>
+        <activity android:name="com.with.tours.RegisteredUsersList" >
+        </activity>
+        <activity android:name="com.with.tourbuilder.NewPointActivity" >
+        </activity>
+        <activity
+            android:name="com.with.tourbuilder.TourDetails"
+            android:label="@string/title_activity_path_details" >
+        </activity>
+        <activity
+            android:name="com.with.tourbuild.PoiDetailsActivity"
+            android:label="@string/title_activity_poi_details" >
+        </activity>
+
+        <receiver android:name="com.with.tourbuilder.PushReceiver" >
+            <intent-filter>
+                <action android:name="com.with.REGISTER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.with.tours.RegistationRequestsActivity"
+            android:label="@string/title_activity_registarion_requests" >
+        </activity>
+
+        <receiver
+            android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.with.tourbuilder" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

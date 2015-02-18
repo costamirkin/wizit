@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.with.tours.ToursList"/>
+<fullyQualifiedTypeName name="android.widget.ProgressBar"/>
+<fullyQualifiedTypeName name="com.with.tourbuild.PoiOverlayItem"/>
+<fullyQualifiedTypeName name="com.with.tourbuilder.R"/>
+<fullyQualifiedTypeName name="com.with.R.id"/>
+<fullyQualifiedTypeName name="com.with.tourbuild.CommonShared"/>
+<fullyQualifiedTypeName name="com.with.InfoActivity"/>
+<fullyQualifiedTypeName name="android.app.AlarmManager"/>
+<fullyQualifiedTypeName name="com.example.alarm.MyReceiver"/>
+<fullyQualifiedTypeName name="android.app.PendingIntent"/>
+<fullyQualifiedTypeName name="android.location.LocationManager"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="android.location.LocationListener"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="android.graphics.Point"/>
+<fullyQualifiedTypeName name="android.graphics.Color"/>
+<fullyQualifiedTypeName name="android.os.SystemClock"/>
+<fullyQualifiedTypeName name="java.util.Vector"/>
+<fullyQualifiedTypeName name="com.with.tourbuilder.SharedObjects"/>
+<fullyQualifiedTypeName name="com.with.tourbuilder.RegistrationRequest"/>
+<fullyQualifiedTypeName name="com.with.tours.RegistertrationRequestsAdapter"/>
+<fullyQualifiedTypeName name="android.support.v4.app.NotificationCompat"/>
+<fullyQualifiedTypeName name="android.app.Notification"/>
+<fullyQualifiedTypeName name="com.parse.SaveCallback"/>
+</qualifiedTypeNameHistroy>

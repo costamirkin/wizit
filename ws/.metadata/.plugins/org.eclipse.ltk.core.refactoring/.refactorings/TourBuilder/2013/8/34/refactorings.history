@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TourBuilder/res/layout/activity_tour_details.xml&apos; to &apos;activity_tour_data.xml&apos;" description="Rename resource &apos;activity_tour_details.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/layout/activity_tour_details.xml" name="activity_tour_data.xml" stamp="1376847028328" updateReferences="true"/>
+</session>
